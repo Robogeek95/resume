@@ -1,0 +1,45 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav
+    #drawer
+    class="sidenav"
+    fixedInViewport
+    [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+    [mode]="(isHandset$ | async) ? 'over' : 'side'"
+    [opened]="(isHandset$ | async) === false"
+  >
+    <mat-toolbar class="mb-3">
+      <div class="pic" style="background: url('assets/2174462f28beb19e801818e1e8e478eab672e46a.png')" alt="Azeez Lukman">
+      </div>
+    </mat-toolbar>
+    <mat-nav-list>
+      <div matRipple class="links" *ngFor="let link of links" routerLink="/">
+        <fa-icon [icon]="link.icon"></fa-icon>
+        <span>{{ link.name }}</span>
+      </div>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content class="sidenav-content">
+    <mat-toolbar>
+      <div>
+        <button
+          type="button"
+          aria-label="Toggle sidenav"
+          mat-icon-button
+          (click)="drawer.toggle()"
+          *ngIf="isHandset$ | async"
+        >
+          <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+        </button>
+        <span>Azeez Lukman</span>
+      </div>
+
+      <div class="logo">Logo</div>
+
+      <button type="button" class="btn btn-info text-uppercase">
+        Download Resume
+      </button>
+    </mat-toolbar>
+    <!-- Add Content Here -->
+    <ng-content></ng-content>
+  </mat-sidenav-content>
+</mat-sidenav-container>
