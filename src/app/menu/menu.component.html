@@ -8,8 +8,13 @@
     [opened]="(isHandset$ | async) === false"
   >
     <mat-toolbar class="mb-3">
-      <div class="pic" style="background: url('assets/2174462f28beb19e801818e1e8e478eab672e46a.png')" alt="Azeez Lukman">
-      </div>
+      <div
+        class="pic"
+        style="
+          background: url('assets/2174462f28beb19e801818e1e8e478eab672e46a.png');
+        "
+        alt="Azeez Lukman"
+      ></div>
     </mat-toolbar>
     <mat-nav-list>
       <div matRipple class="links" *ngFor="let link of links" routerLink="/">
@@ -17,6 +22,18 @@
         <span>{{ link.name }}</span>
       </div>
     </mat-nav-list>
+
+    <div class="d-flex align-items-end justify-content-center button-goup">
+      <div class="btn-group-vertical" role="group" aria-label="Basic example">
+        <button
+          type="button"
+          class="btn btn-secondary"
+          *ngFor="let social of social"
+        >
+          <fa-icon [icon]="social.icon"></fa-icon>
+        </button>
+      </div>
+    </div>
   </mat-sidenav>
   <mat-sidenav-content class="sidenav-content">
     <mat-toolbar>
