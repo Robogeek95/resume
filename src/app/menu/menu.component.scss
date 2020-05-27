@@ -75,3 +75,8 @@ mat-sidenav-content {
   width: 100%;
   bottom: 0;
 }
+
+.selected {
+  background: rgba(255, 255, 255, 0.26);
+  color: #001d26 !important;
+}

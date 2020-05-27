@@ -17,7 +17,13 @@
       ></div>
     </mat-toolbar>
     <mat-nav-list>
-      <div matRipple class="links" *ngFor="let link of links" routerLink="/">
+      <div
+        matRipple
+        class="links"
+        *ngFor="let link of links; let i = index"
+        routerLink="/"
+        [class.selected]="selectedIndex == i"
+      >
         <fa-icon [icon]="link.icon"></fa-icon>
         <span>{{ link.name }}</span>
       </div>
