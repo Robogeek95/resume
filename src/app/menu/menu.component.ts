@@ -30,24 +30,24 @@ export class MenuComponent implements OnInit {
   public selectedIndex: number;
   public links = [
     {
-      name: 'About',
+      name: 'about',
       icon: faUser,
     },
     {
-      name: 'Skills',
+      name: 'skills',
       icon: faPuzzlePiece,
     },
     {
-      name: 'Portfolio',
+      name: 'portfolio',
       icon: faBox,
     },
     {
-      name: 'Contact',
-      icon: faAddressBook,
+      name: 'services',
+      icon: faWeight,
     },
     {
-      name: 'Services',
-      icon: faWeight,
+      name: 'contact',
+      icon: faAddressBook,
     },
   ];
 

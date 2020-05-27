@@ -21,16 +21,16 @@
         matRipple
         class="links"
         *ngFor="let link of links; let i = index"
-        routerLink="/"
+        [routerLink]="['/', link.name]"
         [class.selected]="selectedIndex == i"
       >
         <fa-icon [icon]="link.icon"></fa-icon>
-        <span>{{ link.name }}</span>
+        <span class="text-capitalize">{{ link.name }}</span>
       </div>
     </mat-nav-list>
 
-    <div class="d-flex align-items-end justify-content-center button-goup">
-      <div class="btn-group-vertical" role="group" aria-label="Basic example">
+    <div class="d-flex align-items-end justify-content-center button-goup mb-2">
+      <div class="btn-group-vertical" role="group" aria-label="social links">
         <button
           type="button"
           class="btn btn-secondary"
