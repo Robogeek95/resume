@@ -1,0 +1,34 @@
+[debug] [2020-05-27T23:43:48.200Z] ----------------------------------------------------------------------
+[debug] [2020-05-27T23:43:48.204Z] Command:       /home/azeez/.nvm/versions/node/v14.3.0/bin/node /home/azeez/.nvm/versions/node/v14.3.0/bin/firebase deploy
+[debug] [2020-05-27T23:43:48.204Z] CLI Version:   8.4.0
+[debug] [2020-05-27T23:43:48.204Z] Platform:      linux
+[debug] [2020-05-27T23:43:48.204Z] Node Version:  v14.3.0
+[debug] [2020-05-27T23:43:48.205Z] Time:          Wed May 27 2020 23:43:48 GMT+0000 (Greenwich Mean Time)
+[debug] [2020-05-27T23:43:48.205Z] ----------------------------------------------------------------------
+[debug] [2020-05-27T23:43:48.206Z] 
+[debug] [2020-05-27T23:43:48.216Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-05-27T23:43:48.216Z] > authorizing via signed-in user
+[debug] [2020-05-27T23:43:48.217Z] [iam] checking project robogeek95 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2020-05-27T23:43:48.221Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/robogeek95:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2020-05-27T23:43:49.734Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 27 May 2020 23:43:49 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1146","alt-svc":"h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-05-27T23:43:49.739Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/robogeek95  
+ 
+[debug] [2020-05-27T23:43:50.338Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 27 May 2020 23:43:50 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Deploying to 'robogeek95'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2020-05-27T23:43:50.350Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/robogeek95/versions  
+ {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2020-05-27T23:43:52.355Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 27 May 2020 23:43:52 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting[robogeek95]: beginning deploy... 
+[info] i  hosting[robogeek95]: found 14 files in dist/resume 
+[debug] [2020-05-27T23:43:52.382Z] [hosting] hash cache [ZGlzdC9yZXN1bWU] not populated
+[debug] [2020-05-27T23:43:56.529Z] [hosting] hash cache [ZGlzdC9yZXN1bWU] stored for 14 files
+[debug] [2020-05-27T23:43:56.531Z] [hosting][hash queue][FINAL] {"max":4132,"min":38,"avg":572.5,"active":0,"complete":14,"success":14,"errored":0,"retried":0,"total":14,"elapsed":4147}
+[debug] [2020-05-27T23:43:56.532Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/projects/183365238026/sites/robogeek95/versions/8852c30a79beeab5:populateFiles  
+ <request body omitted>
+[debug] [2020-05-27T23:43:58.325Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 27 May 2020 23:43:58 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-05-27T23:43:58.332Z] [hosting][populate queue][FINAL] {"max":1803,"min":1803,"avg":1803,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":1807}
+[debug] [2020-05-27T23:43:58.333Z] [hosting] uploads queued: 1
