@@ -53,7 +53,9 @@
         >
           <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
         </button>
-        <span class="d-none d-sm-block">Azeez Lukman</span>
+        <span *ngIf="isTablet$ | async" class="d-none d-sm-block"
+          >Azeez Lukman</span
+        >
       </div>
 
       <div class="logo">Logo</div>
