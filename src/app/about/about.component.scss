@@ -3,13 +3,10 @@
 }
 
 .display-2 {
-  line-height: 0.7;
+  line-height: 0.5;
   margin-bottom: 20px;
   font-size: 60px;
   font-weight: 400;
-  @media (min-width: 576px) {
-    // font-size: 150px;
-  }
 }
 
 .display-3 {
