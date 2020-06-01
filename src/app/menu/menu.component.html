@@ -42,7 +42,7 @@
     </div>
   </mat-sidenav>
   <mat-sidenav-content class="sidenav-content">
-    <mat-toolbar>
+    <mat-toolbar ngStyl>
       <div>
         <button
           type="button"
@@ -53,7 +53,7 @@
         >
           <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
         </button>
-        <span *ngIf="isTablet$ | async" class="d-none d-sm-block"
+        <span class="d-none d-md-block"
           >Azeez Lukman</span
         >
       </div>

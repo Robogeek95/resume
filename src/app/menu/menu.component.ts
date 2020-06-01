@@ -28,12 +28,6 @@ export class MenuComponent implements OnInit {
       shareReplay()
     );
 
-  isTablet$: Observable<boolean> = this.breakpointObserver
-    .observe(Breakpoints.Tablet)
-    .pipe(
-      map((result) => result.matches),
-      shareReplay()
-    );
   public selectedIndex: number;
   public links = [
     {
