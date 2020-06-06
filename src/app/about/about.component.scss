@@ -5,7 +5,7 @@
 .display-2 {
   line-height: 0.7;
   margin-bottom: 20px;
-  font-size: 60px;
+  font-size: 45px;
   font-weight: 400;
   @media (min-width: 576px) {
     // font-size: 150px;
@@ -16,8 +16,7 @@
   font-family: Eczar;
   font-style: normal;
   font-weight: bold;
-  font-size: 55px;
-  line-height: 55px;
+  font-size: 40px;
 
   /* identical to box height */
   stroke: solid #0275b1;
@@ -28,11 +27,14 @@
   font-family: Poppins;
   font-style: normal;
   font-weight: normal;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 150%;
-
-  /* or 36px */
-  text-align: center;
-
   color: #f9f9f9;
+}
+
+.avatar> img{
+    max-width: 175px;
+    height: 175px;
+    border-radius: 50%;
+    box-shadow: var(--toc-shadow);
 }
