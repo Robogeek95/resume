@@ -123,6 +123,14 @@
               "devServerTarget": "resume:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {
+            "name": "Robogeek95",
+            "email": "azeezlukman95@gmail.com",
+            "cname": "azeezlukman.me"
+          }
         }
       }
     }
