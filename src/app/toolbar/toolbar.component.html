@@ -1,0 +1,23 @@
+<mat-toolbar>
+      <div>
+        <button
+          type="button"
+          aria-label="Toggle sidenav"
+          mat-icon-button
+
+          *ngIf="isHandset$ | async"
+        >
+          <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+        </button>
+        <span class="d-none d-sm-block">Azeez Lukman</span>
+      </div>
+
+      <div class="logo">Logo</div>
+
+      <button
+        type="button"
+        class="btn btn-info d-none d-sm-block text-uppercase"
+      >
+        Download Resume
+      </button>
+</mat-toolbar>

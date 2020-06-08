@@ -43,30 +43,9 @@
   z-index: 1;
 }
 
-.sidenav-content {
-  mat-toolbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: transparent;
-    color: #ffffff;
-  }
-
-  // .resume-btn{
-  //   color: #0275B1;
-  //   border: 1px solid #0275B1;
-  //   text-transform: uppercase;
-  //   border-radius: 4px;
-  // }
-}
 
 mat-sidenav-content {
-  background: linear-gradient(0deg, rgba(18, 2, 2, 0.45), rgba(18, 2, 2, 0.45)),
-    url("src/assets/background.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-color: aliceblue;
-    background-size: cover;
+ 
 }
 
 .button-goup {

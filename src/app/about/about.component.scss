@@ -1,5 +1,11 @@
-.container {
-  min-height: 90vh;
+#about{
+  background: linear-gradient(0deg, rgba(18, 2, 2, 0.45), rgba(18, 2, 2, 0.45)),
+    url("src/assets/background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: aliceblue;
+  background-size: cover;
+  min-height: 100vh;
 }
 
 .display-2 {

@@ -11,7 +11,7 @@
       <div
         class="pic"
         style="
-          background: url('assets/2174462f28beb19e801818e1e8e478eab672e46a.png');
+          background: url('assets/avatar.jpg');
         "
         alt="Azeez Lukman"
       ></div>
@@ -42,30 +42,6 @@
     </div>
   </mat-sidenav>
   <mat-sidenav-content class="sidenav-content">
-    <mat-toolbar>
-      <div>
-        <button
-          type="button"
-          aria-label="Toggle sidenav"
-          mat-icon-button
-          (click)="drawer.toggle()"
-          *ngIf="isHandset$ | async"
-        >
-          <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
-        </button>
-        <span class="d-none d-sm-block">Azeez Lukman</span>
-      </div>
-
-      <div class="logo">Logo</div>
-
-      <button
-        type="button"
-        class="btn btn-info d-none d-sm-block text-uppercase"
-      >
-        Download Resume
-      </button>
-    </mat-toolbar>
-    <!-- Add Content Here -->
     <ng-content></ng-content>
   </mat-sidenav-content>
 </mat-sidenav-container>
