@@ -1,11 +1,17 @@
 #about{
+  min-height: 100vh;
+}
+
+.mobile-bg{
   background-color: #010e18;
+}
+
+.desktop-bg{
   background: linear-gradient(0deg, rgba(18, 2, 2, 0.45), rgba(18, 2, 2, 0.45)),
-    url("src/assets/background.jpg");
+    url("src/assets/background.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 100vh;
 }
 
 .display-2 {
@@ -40,6 +46,7 @@
 
 .avatar> img{
     max-width: 175px;
+    min-width: 165px;
     height: 175px;
     border-radius: 50%;
     box-shadow: var(--toc-shadow);

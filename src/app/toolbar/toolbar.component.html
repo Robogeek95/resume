@@ -1,6 +1,6 @@
-<mat-toolbar>
-      <div>
-        <button
+<mat-toolbar [ngStyle]="{'background':(isHandset$ | async ) ? '#001d26' : 'transparent' }">
+	<div d-flex flex-column>
+		<button
           type="button"
           aria-label="Toggle sidenav"
           mat-icon-button
@@ -9,12 +9,12 @@
         >
           <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
         </button>
-        <span class="d-none d-sm-block">Azeez Lukman</span>
-      </div>
+	<div class="logo">( Logo )Robogeek</div>
+	</div>
 
-      <div class="logo">Logo</div>
 
-      <button
+
+	<button
         type="button"
         class="btn btn-info d-none d-sm-block text-uppercase"
       >
