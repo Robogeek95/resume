@@ -1,11 +1,23 @@
-.container {
-  min-height: 90vh;
+#about{
+  min-height: 100vh;
+}
+
+.mobile-bg{
+  background-color: #010e18;
+}
+
+.desktop-bg{
+  background: linear-gradient(0deg, rgba(18, 2, 2, 0.45), rgba(18, 2, 2, 0.45)),
+    url("src/assets/background.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .display-2 {
   line-height: 0.5;
   margin-bottom: 20px;
-  font-size: 60px;
+  font-size: 45px;
   font-weight: 400;
 }
 
@@ -13,8 +25,7 @@
   font-family: Eczar;
   font-style: normal;
   font-weight: bold;
-  font-size: 55px;
-  line-height: 55px;
+  font-size: 40px;
 
   /* identical to box height */
   stroke: solid #0275b1;
@@ -25,11 +36,15 @@
   font-family: Poppins;
   font-style: normal;
   font-weight: normal;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 150%;
-
-  /* or 36px */
-  text-align: center;
-
   color: #f9f9f9;
+}
+
+.avatar> img{
+    max-width: 175px;
+    min-width: 165px;
+    height: 175px;
+    border-radius: 50%;
+    box-shadow: var(--toc-shadow);
 }
